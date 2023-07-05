@@ -4,7 +4,7 @@ pipeline{
     agent {
         label 'ws'
     }
-    stages{
+    stages{                                              //start of the stages
         stage("Lint checks"){
           steps{
             sh "echo Installing JSLint"
