@@ -1,7 +1,9 @@
 // nodejs
 
 pipeline{
-    agent any
+    agent {
+        label 'ws'
+    }
     stages{
         stage("Lint checks"){
           steps{
