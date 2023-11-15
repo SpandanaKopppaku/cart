@@ -16,7 +16,7 @@ pipeline {
     stage('terraform init') {
         steps {
             // when you intend to use any groovy commands or any syntax, enclose them inside script{}
-            script { git branch; 'main', url: "https://github.com/SpandanaKopppaku/cart.git"}
+            script { git branch; 'main', url: 'https://github.com/SpandanaKopppaku/cart.git'}
             sh "ls -ltr"
             sh "pwd"
             sh "cd mutable-infra"
